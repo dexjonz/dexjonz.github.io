@@ -1,0 +1,332 @@
+<HTML>
+<HEAD>
+  <TITLE>index.html</TITLE>
+  <meta NAME = "GENERATOR"          CONTENT = "IHMC CmapTools vr. 4.12 ">
+  <meta NAME = "KEYWORDS"           CONTENT = "Dexter Jones, Concept Map, cmap, CmapTools, IHMC, digital components,  Digital Components,  puttin thin carbon material between positive and negative electrodes,  Collector, Base, and Emittor,  Diodes,  A condensor,  Capacitors,  Any current to leave the battery,  Schottky, clamping, Zener,  Cathode, current ends here (negative),  resist and reduce the flow of current through the electrical circuit,  transistors,  Resistors,  flow backwards,  silicon, but other semiconductors such as selenium or germanium are sometimes used.,  A specific never changing electrical resistance,  farads,  amplify or switch electronic signals and electrical power.,  The Anode, current starts by flowing through this (positive),  The small amount of force ends up generating a huge amount,  increasing area of conductors surface">
+  <meta NAME = "DESCRIPTION"        CONTENT = "This Concept Map, created with IHMC CmapTools, has information related to: digital components, amplify or switch electronic signals and electrical power. increase amps, Capacitors measured in farads, transistors increase amps by The small amount of force ends up generating a huge amount, Diodes made of silicon, but other semiconductors such as selenium or germanium are sometimes used., tolerance example ????, Resistors have A specific never changing electrical resistance, ohms resistance Ohms Law, band color determines tolerance, Digital Components consist of Diodes, Resistors measured in ohms, Diodes types Schottky, clamping, Zener, Capacitors symbol, Capacitors used to temporarily store electrical energy in an electric field, Electricty to flow through in a single direction. can't flow backwards, Diodes have Two Terminals, Electricty to flow through in a single direction. meausred in amps, band color also # of bands, temporarily store electrical energy in an electric field voltage Ohms Law, Diodes permit Electricty to flow through in a single direction., Electricty to flow through in a single direction. Doesn't allow Any current to leave the battery">
+  <meta NAME = "AUTHOR"             CONTENT = "IHMC CmapTools">
+  <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; charset = UTF-8">
+  <script LANGUAGE="JavaScript1.2">
+  <!--
+    //  PopUp --
+    //  Institute for Human and Machine Cognition, http://www.ihmc.us/
+    //  CmapTools, Version 4.11, http://cmap.ihmc.us/
+    //  Modify by: CmapTools Developers, cmapsupport@ihmc.us
+    //  Date: 12/14/2006
+
+    var IE = 0;
+    var IE4PC = 0;
+    var NS = 0;
+    var GECKO = 0;
+
+    var openpopups = new Array();
+
+    if (document.all) {                 // Internet Explorer Detected
+	   IE = true;	
+    }
+    else if (document.layers) {         // Netscape Navigator Detected
+	   NS = true;	
+    }
+    else if (document.getElementById) { // Netscape 6 Detected
+       GECKO = true;
+    }
+    else {
+	   alert("Unrecognized Browser Detected::\nSorry, your browser is not compatible.");
+    }
+
+    if (IE)
+    {
+	   OS = navigator.platform;
+	   VER = new String(navigator.appVersion);
+	   VER = VER.substr (0, VER.indexOf(" "));
+	   if ((VER < 4.8) && (OS == "Win32")) 
+	   {
+	       IE4PC = 1;
+	   }
+    }
+
+    function handleResize() {
+	    location.reload();
+	    return false;
+    }
+
+
+    if ((NS) && (navigator.platform == "MacPPC")) {
+	   window.captureEvents (Event.RESIZE);
+	   window.onresize = handleResize;
+    }
+
+    function openResource(event, resourcePath, resourceName, resourceType)
+    {
+	   var newwindow;
+
+       // Resource MIMETypes are enumerated as follows: 
+       // cMap     = Undefined
+       // Image    = 0
+       // Video    = 1
+       // Text     = 2
+       // Audio    = 3
+
+       popDown();
+
+	   switch (resourceType) 
+	   {
+	    case 0:     //Image
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<center><img src=\"';
+                    text += resourcePath;
+                    text +='\"> </center>';
+             break;
+		
+	    case 1:  text   // Video
+		     newwindow = window.open (resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+                     var text ='<embed src=\"';
+                     text += resourcePath;
+                     text +='\" autostart=true> </embed> ';
+             break;
+
+	    case 2:      // Text or Unknown 
+		     newwindow = window.open(resourcePath,resourceName);
+                     newwindow.onBlur = newwindow.focus()
+              break;
+
+	    case 3:       // Audio
+                    newwindow = window.open (resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+                    var text ='<embed src=\"';
+                    text += resourcePath;
+                    text +='\" autoplay=true> </embed> ';
+             break;
+
+	    case 4:
+                    newwindow = window.open(resourcePath,resourceName);
+                    newwindow.onBlur = newwindow.focus()
+	     break;
+	    }
+        return;
+    }
+
+
+
+    function popUpEvt(event, popupName)
+    {
+	popDown();
+
+	if (GECKO)
+	{
+	    document.getElementById(popupName).style.left = event.layerX;
+	    document.getElementById(popupName).style.top = event.layerY;
+	    document.getElementById(popupName).style.background = "#B3B3B3";
+	    document.getElementById(popupName).style.visibility = "visible";
+	    openpopups.push(popupName);
+	}
+	else if (NS) 
+	{
+	    document.layers[popupName].moveTo (event.pageX, event.pageY);
+	    document.layers[popupName].bgColor = "#B3B3B3";
+	    document.layers[popupName].visibility = "show";
+	    openpopups.push(popupName);
+	}
+	else // if (IE)
+	{
+	    window.event.cancelBubble = true;
+	    if (!IE4PC) {
+		document.all[popupName].style.backgroundColor = "#B3B3B3";
+	    }	
+	    document.all[popupName].style.left = window.event.clientX + document.body.scrollLeft;
+	    document.all[popupName].style.top = window.event.clientY + document.body.scrollTop;
+	    document.all[popupName].style.visibility = "visible";
+	    openpopups[openpopups.length] = popupName;
+	}
+	return false;
+    }
+
+    function popDown()
+    {
+	var popupname;
+	
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+		document.getElementById(popupname).style.visibility = "hidden";
+	    }
+	    else if (NS) {
+		document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+		document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+	return;
+    }
+
+    function popDownNoGecko() 
+    {
+	var popupname;
+	for (var i = 0; i < openpopups.length; i++) 
+	{
+	    popupname = new String (openpopups[i]);      
+	    if (GECKO) {
+           //  document.getElementById(popupname).style.visibility = "hidden"; 
+	        return;   // erased for test purposes
+	    }  
+	    else if (NS) {
+	        document.layers[popupname].visibility = "hide";
+	    }
+	    else {
+	        document.all[popupname].style.visibility = "hidden";
+	    }
+	}
+	openpopups = new Array();
+        return;
+    }
+  //-->
+  </script>
+</HEAD>
+<BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0">
+<noscript>
+  <table width=90% cellpadding=10>
+    <tr>
+      <td bgcolor=ff4447>
+        <font color=000000 size=+1 face="helvetica">
+        <h1>WARNING:</h1>
+        <b>JavaScript is turned OFF.  None of the links on this concept map will <br>
+           work until it is reactivated.
+          <p>
+            <a href="http://cmap.ihmc.us/docs/EnablingJavaScript.html">
+                            If you need help turning JavaScript On, click here.
+            </a>
+          </p>
+        </b>
+      </td>
+    </tr>
+  </table>
+This Concept Map, created with IHMC CmapTools, has information related to: digital components, amplify or switch electronic signals and electrical power. increase amps, Capacitors measured in farads, transistors increase amps by The small amount of force ends up generating a huge amount, Diodes made of silicon, but other semiconductors such as selenium or germanium are sometimes used., tolerance example ????, Resistors have A specific never changing electrical resistance, ohms resistance Ohms Law, band color determines tolerance, Digital Components consist of Diodes, Resistors measured in ohms, Diodes types Schottky, clamping, Zener, Capacitors symbol, Capacitors used to temporarily store electrical energy in an electric field, Electricty to flow through in a single direction. can't flow backwards, Diodes have Two Terminals, Electricty to flow through in a single direction. meausred in amps, band color also # of bands, temporarily store electrical energy in an electric field voltage Ohms Law, Diodes permit Electricty to flow through in a single direction., Electricty to flow through in a single direction. Doesn't allow Any current to leave the battery
+
+</noscript>
+
+<map name="index.html">
+  <area shape="rect"
+        href="1QMJYBSQGI1N9FVQ0IMJItextIhtml"
+        onClick="popUpEvt(event,'1QMJYBSQGI1N9FVQ0IMJItextIhtml'); return false;"
+        coords="1212,182,1230,200">
+  <area shape="rect"
+        href="1QMJYBGT2IY6CCKFIKQItextIhtml"
+        onClick="popUpEvt(event,'1QMJYBGT2IY6CCKFIKQItextIhtml'); return false;"
+        coords="617,224,635,242">
+  <area shape="rect"
+        href="1QMJYBM2QIFT306XILLItextIhtml"
+        onClick="popUpEvt(event,'1QMJYBM2QIFT306XILLItextIhtml'); return false;"
+        coords="975,268,993,286">
+  <area shape="rect"
+        href="1QMJYBD8WIS0QCSGIJVItextIhtml"
+        onClick="popUpEvt(event,'1QMJYBD8WIS0QCSGIJVItextIhtml'); return false;"
+        coords="251,154,269,172">
+  <area shape="rect"
+        href="1QMN3RF5CI23S6XYLI1GJItextIhtml"
+        onClick="popUpEvt(event,'1QMN3RF5CI23S6XYLI1GJItextIhtml'); return false;"
+        coords="673,922,691,940">
+</map>
+
+<center>
+  <table width=* height=* cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td valign=center align=center>
+        <img USEMAP="#index.html"
+             SRC="index.jpg"
+             ALIGN=middle
+             BORDER=0
+             onClick=popDown();>
+      </td>
+    </tr>
+    <tr>
+      <td VALIGN=top ALIGN=right>
+        <table>
+          <tr>
+            <td ALIGN=right VALIGN=middle>
+              <map NAME="CmapToolsTrademark">
+                <area SHAPE="rect"
+                      href="http://cmap.ihmc.us/"
+                      onClick="openResource(event,'http://cmap.ihmc.us/', 0, 2); return false;"
+                      coords="1,1,210,50">
+              </map>
+            </td>
+          </tr>
+          <tr>
+            <td  ALIGN=right VALIGN=middle>
+              <img USEMAP="#CmapToolsTrademark"
+                   SRC="CmapToolsTrademark.gif" 
+                   ALT="IHMC Cmap Tools Trademark" width="210" height="50"
+                   ALIGN=middle
+                   BORDER=0>
+            </td>
+            <td VALIGN=middle>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</center>
+</BODY>
+</HTML>
+<div id="1QMJYBSQGI1N9FVQ0IMJItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://learn.sparkfun.com/tutorials/diodes "TITLE="">
+      Diodes - learn.sparkfun.com
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1QMJYBGT2IY6CCKFIKQItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://en.wikipedia.org/wiki/Capacitor "TITLE="">
+      Capacitor - Wikipedia, the free encyclopedia
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1QMJYBM2QIFT306XILLItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://en.wikipedia.org/wiki/Transistor "TITLE="">
+      Transistor - Wikipedia, the free encyclopedia
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1QMJYBD8WIS0QCSGIJVItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="https://learn.sparkfun.com/tutorials/resistors "TITLE="">
+      Resistors - learn.sparkfun.com
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="1QMN3RF5CI23S6XYLI1GJItextIhtml" style="POSITION: absolute; Z-INDEX: 20; VISIBILITY: hidden; left: 0; top: 0;">
+  <table border=1 cellpadding=1 cellspacing=0 bgcolor="#dddddd">
+    <tr>
+      <td nowrap><font face="Geneva, Arial" size=2>
+      <a href="http://www.physicsclassroom.com/class/circuits/Lesson-3/Ohm-s-Law "TITLE="">
+      Ohm's Law
+      </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
